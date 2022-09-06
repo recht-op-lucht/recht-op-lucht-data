@@ -37,7 +37,7 @@ def calculate_yearly_average(df):
     weighted_average = (df["no2"] * df["weight"]).sum() / df["weight"].sum()
 
     # calibration factor
-    return weighted_average * 1.051
+    return weighted_average * 0.996 + 1.141
 
 
 # calculate yearly average per location
